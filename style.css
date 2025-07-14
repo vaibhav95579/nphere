@@ -1,0 +1,19 @@
+.product-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.product p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
