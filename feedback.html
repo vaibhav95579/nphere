@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Product Feedback</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f8f9fa;
+      margin: 0;
     }
 
     .container {
@@ -36,7 +35,7 @@
 
     input[type="text"],
     input[type="email"],
-    select,
+    input[type="number"],
     textarea {
       width: 100%;
       padding: 10px;
@@ -49,29 +48,6 @@
     textarea {
       resize: vertical;
       min-height: 100px;
-    }
-
-    .rating {
-      display: flex;
-      gap: 5px;
-      font-size: 22px;
-      margin-bottom: 16px;
-    }
-
-    .rating input {
-      display: none;
-    }
-
-    .rating label {
-      cursor: pointer;
-      color: #ccc;
-    }
-
-    .rating input:checked ~ label,
-    .rating input:hover ~ label,
-    .rating label:hover,
-    .rating label:hover ~ label {
-      color: #f5b301;
     }
 
     button {
@@ -92,33 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <h2>Product Feedback</h2>
-    <form action="submit_feedback.php" method="POST">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required />
+    <h2>Feedback</h2>
+    <form action="#" method="POST">
+      <label>Your Name</label>
+      <input type="text" name="name" required>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required />
+      <label>Email</label>
+      <input type="email" name="email" required>
 
-      <label for="product">Select Product</label>
-      <select id="product" name="product" required>
-        <option value="">--Choose a product--</option>
-        <option value="Product A">Product A</option>
-        <option value="Product B">Product B</option>
-        <option value="Product C">Product C</option>
-      </select>
+      <label>Rating (1 to 5)</label>
+      <input type="number" name="rating" min="1" max="5" required>
 
-      <label>Rating</label>
-      <div class="rating">
-        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
-        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
-        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
-        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
-        <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
-      </div>
-
-      <label for="message">Your Feedback</label>
-      <textarea id="message" name="message" placeholder="Write your thoughts..." required></textarea>
+      <label>Your Feedback</label>
+      <textarea name="message" placeholder="Write your thoughts..." required></textarea>
 
       <button type="submit">Submit Feedback</button>
     </form>
