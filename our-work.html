@@ -58,12 +58,9 @@
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
     }
-    .products img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    .price {
+      font-weight: bold;
     }
     footer {
       background-color: #ffc0cb;
@@ -71,30 +68,6 @@
       padding: 20px;
       font-size: 14px;
       margin-top: 40px;
-    }
-    /* Modal */
-    #imgModal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-    #imgModal img {
-      max-width: 90%;
-      max-height: 80%;
-      border-radius: 10px;
-    }
-    #imgModal span {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 40px;
-      color: white;
-      cursor: pointer;
     }
   </style>
 </head>
@@ -127,16 +100,16 @@
 
     <div class="products">
       <div>
-        <img src="pic/bubble.png" alt="Bubble Candle">
-        <p>Bubble Candle</p>
+        <img src="pic/mrp150.png" alt="Bubble Candle">
+        <p class="price">Cost is MRP 150</p>
       </div>
       <div>
-        <img src="pic/rose.png" alt="Rose Candle">
-        <p>Rose Candle</p>
+        <img src="pic/mrp200.png" alt="Rose Candle">
+        <p class="price">Cost is MRP 200</p>
       </div>
       <div>
-        <img src="pic/tower.jpg" alt="Tower Candle">
-        <p>Tower Candle</p>
+        <img src="pic/mrp250.png" alt="Tower Candle">
+        <p class="price">Cost is MRP 250</p>
       </div>
     </div>
   </section>
@@ -144,22 +117,5 @@
   <footer>
     &copy; 2025 NPHere Candles | All Rights Reserved
   </footer>
-
-  <!-- Modal for image preview -->
-  <div id="imgModal">
-    <span onclick="document.getElementById('imgModal').style.display='none'">&times;</span>
-    <img id="modalImg">
-  </div>
-
-  <script>
-    const modal = document.getElementById('imgModal');
-    const modalImg = document.getElementById('modalImg');
-    document.querySelectorAll('img').forEach(img => {
-      img.addEventListener('click', () => {
-        modal.style.display = 'flex';
-        modalImg.src = img.src;
-      });
-    });
-  </script>
 </body>
 </html>
