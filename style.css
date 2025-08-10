@@ -1,19 +1,43 @@
-.product-gallery {
+/* Hover effect on all images */
+img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Navigation bar styling */
+nav {
+  background: linear-gradient(90deg, #ffe6f2, #ffc0cb);
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
-
-.product img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.product p {
-  text-align: center;
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
-  margin-top: 10px;
+  color: #b30059;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background-color: #b30059;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Feedback button in nav */
+nav a.feedback-btn {
+  background-color: #ff4d94;
+  color: white;
+  font-weight: bold;
+}
+nav a.feedback-btn:hover {
+  background-color: #b30059;
+  color: white;
 }
