@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Special Collections - NP Here</title>
+  <title>Privacy Policy - NP Here</title>
   <style>
     body {
       margin: 0;
@@ -31,31 +31,19 @@
       font-weight: bold;
       color: #b30059;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
-      padding: 40px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h2 {
-      text-align: center;
       color: #b30059;
-    }
-    .specials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
-    }
-    .specials div {
-      text-align: center;
-      width: 200px;
-    }
-    .specials img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .price {
-      font-weight: bold;
     }
     footer {
       background-color: #ffc0cb;
@@ -64,65 +52,88 @@
       font-size: 14px;
       margin-top: 40px;
     }
+    /* Optional Modal Viewer */
+    #imgModal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    #imgModal img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+    #imgModal span {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Special Collections</h1>
-    <p>Explore our curated candle themes</p>
+    <h1>Privacy Policy</h1>
   </header>
 
-  <nav>
+ <nav>
     <a href="index.html">Home</a>
+    <a href="allcanndles.html">All Candles</a>
     <a href="about.html">About Us</a>
     <a href="our-work.html">Our Work</a>
     <a href="specials.html">Specials</a>
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms & Conditions</a>
     <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="howtoorder.html">How to Order</a>
+    
   </nav>
 
   <section>
-    <h2>Celebrate with Our Special Editions</h2>
-    <div class="specials">
-      <div>
-       <div>
-  <a href="pic/mrp229.png" target="_blank">
-    <img src="pic/mrp229.png" alt="Diwali Special">
-  </a>
-  <p><b>Exotic Pillar Candle</b></p>
-  <p class="price">MRP 229 per piece</p>
-</div>
+    <h2>Overview</h2>
+    <p>At NP Here, your privacy is our top priority. This policy explains how we collect, use, and protect your personal information.</p>
 
-<div>
-  <a href="pic/packof199.png" target="_blank">
-    <img src="pic/packof199.png" alt="Flower Special">
-  </a>
-  <p><b>Pack of ladoo Candle</b></p>
-  <p class="price">MRP 199 per pack</p>
-</div>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>Personal details such as name, email address, and phone number (when provided)</li>
+      <li>Usage data like browser type, IP address, and interaction on our website</li>
+    </ul>
 
-<div>
-  <a href="pic/mrp50.png" target="_blank">
-    <img src="pic/mrp50.png" alt="Teddy Special">
-  </a>
-  <p><b>Rose Candle</b></p>
-  <p class="price">MRP 50 per piece</p>
-</div>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To improve user experience and our product offerings</li>
+      <li>To send promotional and marketing communications (with your consent)</li>
+    </ul>
 
-<div>
-  <a href="pic/mrp40.png" target="_blank">
-    <img src="pic/mrp40.png" alt="Valentine Special">
-  </a>
-  <p><b>Sippi Candle</b></p>
-  <p class="price">MRP 40 per piece</p>
-</div>
+    <h2>Third-Party Disclosure</h2>
+    <p>We do not sell or trade your personal information. We may share data with trusted partners to help operate our site.</p>
 
-    </div>
+    <h2>Security</h2>
+    <p>We implement security measures to protect your information against unauthorized access.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions regarding this policy, please reach out to our team via the contact page.</p>
   </section>
 
   <footer>
     &copy; 2025 NPHere Candles | All Rights Reserved
   </footer>
-</body>
-</html>
+
+  <!-- Optional Image Modal -->
+  <div id="imgModal">
+    <span onclick="document.getElementById('imgModal').style.display='none'">&times;</span>
+    <img id="modalImg">
+  </div>
+
+  <script>
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+    document.querySelect
