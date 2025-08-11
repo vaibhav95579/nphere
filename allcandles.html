@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NP Here - All Candles</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background: url('pic/logo.jpg') no-repeat center/cover;
+      padding: 80px 10px; 
+      text-align: center;
+    }
+    nav {
+      background-color: #ffe6f2;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      color: #b30059;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff007f;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+      color: rgb(255, 34, 115);
+    }
+    footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .product-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+    }
+    .product {
+      background: transparent;
+      text-align: center;
+      padding: 10px;
+      width: 220px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      text-decoration: none; /* remove underline */
+      color: black; /* default text color */
+    }
+    .product img {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .product p {
+      font-weight: bold;
+      margin: 8px 0 0;
+      color: black; /* keep name & price black */
+    }
+    .product:hover {
+      transform: translateY(-8px);
+    }
+    .product:hover img {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .product:hover p {
+      color: #ff007f;
+    }
+    .product:link, 
+    .product:visited {
+      color: black; /* prevent default blue link */
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="allcanndles.html">All Candles</a>
+    <a href="about.html">About Us</a>
+    <a href="our-work.html">Our Work</a>
+    <a href="specials.html">Specials</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="contact.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="howtoorder.html">How to Order</a>
+    
+  </nav>
+
+  <div class="hero">
+    <h1>NPHere Exclusive Candles</h1>
+    <h2>Check out our exclusive range of aromatic and artistic candles</h2>
+  </div>
+
+  <!-- Sorted from tallest to shortest -->
+  <div class="product-gallery">
+    <a class="product" href="pic/mrp229.png" target="_blank">
+      <img src="pic/mrp229.png" alt="Pillar Candle">
+      <p>Pillar Candle</p>
+      <p>₹229</p>
+    </a>
+    <a class="product" href="pic/packof199.png" target="_blank">
+      <img src="pic/packof199.png" alt="Ladoo Candle">
+      <p>Ladoo Candle</p>
+      <p><s>₹299</s> ₹199</p>
+    </a>
+    <a class="product" href="pic/mrp150.png" target="_blank">
+      <img src="pic/mrp150.png" alt="Seashell Candle">
+      <p>Seashell Candle</p>
+      <p>₹150</p>
+    </a>
+    <a class="product" href="pic/mrp90.png" target="_blank">
+      <img src="pic/mrp90.png" alt="Lotus Candle">
+      <p>Lotus Candle</p>
+      <p>₹90</p>
+    </a>
+    <a class="product" href="pic/mrp60.png" target="_blank">
+      <img src="pic/mrp60.png" alt="Bubble Candle">
+      <p>Bubble Candle</p>
+      <p>₹60</p>
+    </a>
+    <a class="product" href="pic/mrp50.png" target="_blank">
+      <img src="pic/mrp50.png" alt="Rose Flower Candle">
+      <p>Rose Flower Candle</p>
+      <p>₹50</p>
+    </a>
+    <a class="product" href="pic/mrp40.png" target="_blank">
+      <img src="pic/mrp40.png" alt="Sippi Candle">
+      <p>Sippi Candle</p>
+      <p>₹40</p>
+    </a>
+  </div>
+
+  <footer>
+    <p>Phone: +91 9318407314</p>
+    <p>WhatsApp: +91 8595986137</p>
+    <p>Email: <a href="mailto:i63526230@gmail.com">i63526230@gmail.com</a></p>
+    &copy; 2025 NPHere Candles | All Rights Reserved
+  </footer>
+</body>
+</html>
